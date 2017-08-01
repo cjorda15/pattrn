@@ -13,3 +13,18 @@ $tabLink.on('click',function(e){
      $(this).addClass('tab-active')
    }
 })
+
+$('.menu').on('click',()=> {
+  console.log("Q!!!")
+  $('.drop-dn-menu').toggle()
+})
+
+
+
+
+// const check = $(this).attr('id');
+// if($('.drop-dn-menu').attr('hide')){
+//
+//   $('.drop-dn-menu').attr('id', 'hide')
+// }
+// $('.drop-dn-menu').remove('id', 'hide')

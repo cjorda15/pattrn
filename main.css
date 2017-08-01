@@ -1,3 +1,4 @@
+
 *{
   padding: 0px;
   margin: 0px;
@@ -45,9 +46,12 @@ header div{
 }
 
 .accordion-tabs{
-  width: 95%;
   display: flex;
+  /*border-width: 0px  1px;*/
+  /*border-color: #000;
+  border-style: solid;  margin: 0px auto;*/
   margin: 0px auto;
+  width: 94%;
 }
 
 .tabs{
@@ -66,7 +70,8 @@ header div{
   display: inline-flex;
   left: 3%;
   top: 15%;
-  width: 95vw;
+  width: 94%;
+  background: aliceblue;
 }
 
 .tab-link{
@@ -82,7 +87,6 @@ header div{
 .tab-active{
   background: paleturquoise;
   border: 1px solid #c9c9c9;
-  width:60vw;
   font-size: 20px;
 }
 
@@ -152,6 +156,59 @@ header div{
   height: 55px;
 }
 
+.header-container{
+display: flex;
+flex-direction: column;
+width: 80%;
+}
+
+.drop-dn-menu{
+  display: none;
+}
+
+nav{
+  background: #D1D2D3;
+  margin: 0px auto;
+  height: 95px;
+  width:100%;
+}
+
+.header-bar{
+  align-items: center;
+  display: flex;
+  height: 100%;
+  margin-top: 90px;
+  justify-content: space-between;
+}
+
+  .dummy-drop-dn-btn{
+  display: none;
+  background: #fff;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  margin-left: 10px;
+}
+
+.full-nav-bar{
+  align-items: center;
+  justify-content: space-around;
+  width: 91%;
+  display: flex;
+}
+
+.drop-dn-menu{
+  display: none;
+}
+
+.full-nav-bar input{
+  height: 26px;
+  width: 195px;
+}
+
+.menu{
+  display: none;
+}
 
 @media (max-width:500px){
 
@@ -172,8 +229,8 @@ header div{
   }
   .content-show{
     position: static;
-    /*display: block;
-    left: 3%;*/
+    width: 100%;
+
   }
   .unicode-tab{
     content: "\002B";
@@ -194,4 +251,60 @@ header div{
     flex-direction: column;
     height: 400vh;
   }
+  #hide{
+    display: none;
+  }
+}
+
+
+@media (max-width:770px){
+
+  .full-nav-bar{
+    display: none;
+  }
+
+  .dummy-drop-dn-btn{
+    display: none;
+  }
+
+  .menu{
+  background: grey;
+  display: block;
+  padding: 14px;
+  font-size: 25px;
+  margin-right: 20px;
+  border-radius: 94%;
+  }
+
+  .nav{
+    display:flex;
+  }
+
+  .drop-dn-btn{
+    background: #fff;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    margin-left: 10px;
+  }
+
+  .drop-dn-menu{
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    margin: 0px auto;
+    width: 100%;
+}
+
+.drop-dn-menu input{
+  height: 60px;
+  width: 95%;
+  margin: 0px auto;
+}
+
+.drop-dn-menu a{
+  font-size: 35px;
+  margin: 40px 0px 37px 70px;
+  width: 95%;
+}
 }
